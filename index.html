@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <h2>Add Task</h2>
+    <form action="/addTask" method="post">
+      <input
+        type="text"
+        name="description"
+        placeholder="Enter task description"
+        required
+      />
+      <select name="day" required>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+      <input type="submit" value="Add Task" />
+    </form>
+    <h2>Update Task Status</h2>
+    <form action="/toggleTask" method="post">
+      <input
+        type="text"
+        name="description"
+        placeholder="Enter task description"
+        required
+      />
+      <select name="day" required>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+      <input type="submit" value="Toggle Status" />
+    </form>
+    <h2>Edit Task</h2>
+    <form action="/editTask" method="post">
+      <input
+        type="text"
+        name="oldDescription"
+        placeholder="Enter old task description"
+        required
+      />
+      <input
+        type="text"
+        name="newDescription"
+        placeholder="Enter new task description"
+        required
+      />
+      <select name="day" required>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+      <input type="submit" value="Edit Task" />
+    </form>
+    <h2>Remove Task</h2>
+    <form action="/removeTask" method="post">
+      <input
+        type="text"
+        name="description"
+        placeholder="Enter task description"
+        required
+      />
+      <select name="day" required>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+      <input type="submit" value="Remove Task" />
+    </form>
+  </body>
+</html>
